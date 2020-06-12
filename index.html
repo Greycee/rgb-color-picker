@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB - Color picker</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1> 🎨 RGB color picker</h1>
+      <div class="flex-row">
+        <label class="label">(R) Red - Vermelho:</label>
+        <input type="range" value="0" id="red" min="0" max="255" onchange="getColor()"></input>
+        <input type="text" value="0" id="redValue" disabled size="4" style="margin-left: 40px;"></input>
+      </div>
+      <div class="flex-row">
+        <label class="label">(G) Green - Verde:</label>
+        <input type="range" value="0" id="green" min="0" max="255" onchange="getColor()"></input>
+        <input type="text" value="0" id="greenValue" disabled size="4" style="margin-left: 40px;"></input>
+      </div>
+      <div class="flex-row">
+        <label class="label">(B) Blue - Azul:</label>
+        <input type="range" value="0" id="blue" min="0" max="255" onchange="getColor()"></input>
+        <input type="text" value="0" id="blueValue" disabled size="4" style="margin-left: 40px;"></input>
+      </div>
+      <div id="square">
+      </div>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
